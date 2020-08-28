@@ -1,17 +1,17 @@
 {% set name = "pycaret" %}
-{% set version = "2.0" %}
+{% set version = "2.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 5db9060f9d8ba53dbfb558b41de822c5b4175223c05a3a2c3c41c71346510694
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2a38a66a78d97c7807f71b5d92713adc5eedab56b9d62cb8ee29e537b9cbc995
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -54,11 +54,11 @@ test:
     - pycaret
 
 about:
-  home: "https://github.com/pycaret/pycaret"
+  home: https://github.com/pycaret/pycaret
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "PyCaret - An open source, low-code machine learning library in Python."
+  summary: PyCaret - An open source, low-code machine learning library in Python.
   doc_url: https://pycaret.org/guide/
   dev_url: https://github.com/pycaret/pycaret
 
