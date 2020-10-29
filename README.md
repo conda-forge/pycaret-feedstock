@@ -5,11 +5,13 @@ Home: https://github.com/pycaret/pycaret
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycaret-feedstock/blob/master/LICENSE.txt)
 
 Summary: PyCaret - An open source, low-code machine learning library in Python.
 
+Development: https://github.com/pycaret/pycaret
 
+Documentation: https://pycaret.org/guide/
 
 Current build status
 ====================
