@@ -21,7 +21,6 @@ requirements:
   run:
     - catboost
     - cufflinks-py >=0.17.0
-    - datefinder >=0.7.0
     - gensim
     - imbalanced-learn
     - ipython
@@ -40,6 +39,8 @@ requirements:
     - pyldavis
     - pyod
     - python
+    - scikit
+    - scikit-plot
     - scikit-learn >=0.23
     - seaborn
     - spacy
