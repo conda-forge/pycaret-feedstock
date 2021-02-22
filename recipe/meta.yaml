@@ -19,7 +19,7 @@ requirements:
     - python
     - pip
   run:
-    - catboost
+    - boruta_py
     - cufflinks-py >=0.17.0
     - datefinder >=0.7.0
     - gensim
@@ -33,7 +33,7 @@ requirements:
     - mlflow
     - mlxtend
     - nltk
-    - numpy >=1.17
+    - numpy ==1.19.5
     - pandas
     - pandas-profiling >=2.3.0
     - plotly >=4.4.1
@@ -41,12 +41,12 @@ requirements:
     - pyod
     - python
     - scikit-learn >=0.23
+    - scipy <=1.5.4
     - seaborn
-    - spacy
+    - spacy <2.4.0
     - textblob
     - umap-learn
     - wordcloud
-    - xgboost >=0.90
     - yellowbrick >=1.0.1
 
 test:
