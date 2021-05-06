@@ -1,5 +1,5 @@
 {% set name = "pycaret" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f75e85a3a0f2b405da5dfa2d4ab78e0d9a65236a5716b0b4fef6269ff3f9152e
+  sha256: 53014e063b7d21fadf26d629a5e239d99e703026c200069693d075ea809542bb
 
 build:
   number: 0
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
     - boruta_py
     - cufflinks-py >=0.17.0
     - datefinder >=0.7.0
-    - gensim
-    - imbalanced-learn
+    - gensim <4.0.0
+    - imbalanced-learn ==0.7.0
     - ipython
     - ipywidgets
     - joblib
@@ -31,7 +31,7 @@ requirements:
     - lightgbm >=2.3.1
     - matplotlib-base
     - mlflow
-    - mlxtend
+    - mlxtend >=0.17.0
     - nltk
     - numpy ==1.19.5
     - pandas
@@ -39,7 +39,7 @@ requirements:
     - plotly >=4.4.1
     - pyldavis
     - pyod
-    - python
+    - python >=3.6
     - scikit-learn >=0.23
     - scipy <=1.5.4
     - seaborn
