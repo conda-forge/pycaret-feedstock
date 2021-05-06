@@ -22,8 +22,8 @@ requirements:
     - boruta_py
     - cufflinks-py >=0.17.0
     - datefinder >=0.7.0
-    - gensim
-    - imbalanced-learn
+    - gensim <4.0.0
+    - imbalanced-learn ==0.7.0
     - ipython
     - ipywidgets
     - joblib
@@ -31,7 +31,7 @@ requirements:
     - lightgbm >=2.3.1
     - matplotlib-base
     - mlflow
-    - mlxtend
+    - mlxtend >=0.17.0
     - nltk
     - numpy ==1.19.5
     - pandas
