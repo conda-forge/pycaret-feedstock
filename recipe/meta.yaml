@@ -1,5 +1,5 @@
 {% set name = "pycaret" %}
-{% set version = "2.3.2" %}
+{% set version = "2.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cd8cd6ca2285b78895fc9cce8e1ae446ba2ed54ce32d9d6e749cf641bf092d03
+  sha256: 34c93935b97e809ecd964d770b5bf03574a84cebae881c1ef5bb77242ccf4a83
 
 build:
   number: 0
@@ -32,22 +32,23 @@ requirements:
     - mlflow
     - mlxtend >=0.17.0
     - nltk
+    - numba <0.54
     - numpy ==1.19.5
     - pandas
-    - pandas-profiling >=2.3.0
+    - pandas-profiling >=2.8.0
     - plotly >=4.4.1
     - pyldavis
     - pyod
     - python >=3.6
     - scikit-learn >=0.23, <=0.23.2
+    - scikit-plot
     - scipy <=1.5.4
+    - seaborn
     - spacy <2.4.0
     - textblob
     - umap-learn
     - wordcloud
     - yellowbrick >=1.0.1
-    - scikit-plot
-    - packaging
 
 test:
   imports:
@@ -59,9 +60,10 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: PyCaret - An open source, low-code machine learning library in Python.
-  doc_url: https://pycaret.org/guide/
+  doc_url: https://pycaret.readthedocs.io/en/latest/
   dev_url: https://github.com/pycaret/pycaret
 
 extra:
   recipe-maintainers:
     - melonhead901
+    - mpaulonis
