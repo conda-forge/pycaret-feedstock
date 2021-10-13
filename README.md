@@ -11,7 +11,7 @@ Summary: PyCaret - An open source, low-code machine learning library in Python.
 
 Development: https://github.com/pycaret/pycaret
 
-Documentation: https://pycaret.org/guide/
+Documentation: https://pycaret.readthedocs.io/en/latest/
 
 Current build status
 ====================
@@ -120,4 +120,5 @@ Feedstock Maintainers
 =====================
 
 * [@melonhead901](https://github.com/melonhead901/)
+* [@mpaulonis](https://github.com/mpaulonis/)
 
