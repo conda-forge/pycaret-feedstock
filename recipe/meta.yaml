@@ -1,5 +1,5 @@
 {% set name = "pycaret" %}
-{% set version = "2.3.4" %}
+{% set version = "2.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 34c93935b97e809ecd964d770b5bf03574a84cebae881c1ef5bb77242ccf4a83
+  sha256: 01eb8c1b6a17ed4356cf7d998e4253d5e3f3aea7bcebe2fc47fa49e3d12136f9
 
 build:
   number: 0
@@ -32,7 +32,6 @@ requirements:
     - mlflow
     - mlxtend >=0.17.0
     - nltk
-    - numba <0.54
     - numpy ==1.19.5
     - pandas
     - pandas-profiling >=2.8.0
