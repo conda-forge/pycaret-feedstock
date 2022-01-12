@@ -47,7 +47,7 @@ requirements:
     - umap-learn
     - wordcloud
     - yellowbrick >=1.0.1
-    - pyyaml<6.0.0
+    - pyyaml <6.0.0
 
 test:
   imports:
