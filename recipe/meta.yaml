@@ -1,5 +1,5 @@
 {% set name = "pycaret" %}
-{% set version = "2.3.5" %}
+{% set version = "2.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 01eb8c1b6a17ed4356cf7d998e4253d5e3f3aea7bcebe2fc47fa49e3d12136f9
+  sha256: 9e39b591a9fbd6768d57f9b9b52177a4d6b8effc142410f475a55970d57a212e
 
 build:
   number: 0
