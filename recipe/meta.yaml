@@ -32,7 +32,6 @@ requirements:
     - mlflow
     - mlxtend >=0.17.0
     - nltk
-    - numpy ==1.19.5
     - pandas
     - pandas-profiling >=2.8.0
     - plotly >=4.4.1
@@ -48,6 +47,7 @@ requirements:
     - umap-learn
     - wordcloud
     - yellowbrick >=1.0.1
+    - pyyaml<6.0.0
 
 test:
   imports:
