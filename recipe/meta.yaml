@@ -41,13 +41,14 @@ requirements:
     - scikit-learn >=0.23, <=0.23.2
     - scikit-plot
     - scipy <=1.5.4
-    - seaborn
     - spacy <2.4.0
     - textblob
     - umap-learn
     - wordcloud
     - yellowbrick >=1.0.1
-    - pyyaml <6.0.0
+    - numba <0.55
+    - numpy
+    - packaging
 
 test:
   imports:
