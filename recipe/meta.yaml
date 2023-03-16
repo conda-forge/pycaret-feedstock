@@ -10,7 +10,7 @@ source:
   sha256: c75a200c35532fc242d2436cfb45c2c330b63a0b047852bf88bd7a5ede8f632c
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -40,7 +40,7 @@ requirements:
     - python >=3.6
     - scikit-learn >=0.23, <=0.23.2
     - scikit-plot
-    - scipy <2.0.0
+    - scipy <=1.5.4
     - spacy <2.4.0
     - textblob
     - umap-learn
