@@ -3,7 +3,7 @@ About pycaret-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycaret-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/pycaret/pycaret
+Home: https://pycaret.org/
 
 Package license: MIT
 
