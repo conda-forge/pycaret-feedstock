@@ -43,7 +43,7 @@ requirements:
     - deprecation >=2.1.0
     - python-xxhash
     - wurlitzer
-    - matplotlib >=3.3.0
+    - matplotlib-base >=3.3.0
     - scikit-plot >=0.3.7
     - yellowbrick >=1.4
     - plotly >=5.0.0
