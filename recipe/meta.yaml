@@ -1,5 +1,5 @@
 {% set name = "pycaret" %}
-{% set version = "3.3.0" %}
+{% set version = "3.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pycaret/pycaret/archive/refs/tags/{{ version }}.tar.gz
-  sha256: cdd2910e6eebd9c65613bdb0f4c532d1f2159deffc49b53a2552f5098660ce35
+  sha256: 0834e8f4bbb3a833ae022ab1c4dda87cb73e0e06f2e7d93dad6de17702f56cfe
 
 build:
   number: 0
