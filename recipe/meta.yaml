@@ -10,16 +10,16 @@ source:
   sha256: aa89ed0a5795e05200e0e3d44ec3ee96bfea499d5db2df5e37ce903a5bff6ace
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - ipython >=5.5.0
     - ipywidgets >=7.6.5
     - tqdm >=4.62.0
@@ -57,6 +57,8 @@ requirements:
 
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pycaret
 
